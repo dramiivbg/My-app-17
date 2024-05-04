@@ -1,11 +1,16 @@
 import { Component, DestroyRef, ElementRef, OnInit, Renderer2, ViewChild, computed, input, viewChild } from '@angular/core';
 import { Product } from '../shared/models/product';
 import { FormArray, FormArrayName, FormBuilder, FormControl, FormGroup, FormGroupDirective, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
 @Component({
   selector: 'app-resolver',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule,MatFormFieldModule, MatInputModule,MatButtonModule,
+    MatIconModule,MatCardModule],
   templateUrl: './resolver.component.html',
   styleUrl: './resolver.component.scss'
 })
