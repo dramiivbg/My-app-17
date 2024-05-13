@@ -1,5 +1,5 @@
 import { Component, DestroyRef } from '@angular/core';
-import { Product } from '../shared/models/product';
+import { Product } from '../../shared/models/product';
 @Component({
   selector: 'app-home',
   standalone: true,

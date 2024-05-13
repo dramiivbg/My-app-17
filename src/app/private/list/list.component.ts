@@ -1,13 +1,13 @@
 import { AfterViewInit, Component, ViewChild, inject } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
-import { ApiService } from '../shared/service/Api.service';
-import { environment } from '../../environments/environment';
+import { ApiService } from '../../shared/service/Api.service';
+import { environment } from '../../../environments/environment';
 import { formatDate } from '@angular/common';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { provideNativeDateAdapter } from '@angular/material/core';
-import { Catalog } from '../shared/models/catalog';
+import { Catalog } from '../../shared/models/catalog';
 import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import {MatCardModule} from '@angular/material/card';

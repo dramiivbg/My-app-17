@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fireauth-97909": {
+      "hosting": {
+        "my-app": [
+          "fireauth-97909"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fireauth-97909"
+  }
+}

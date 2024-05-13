@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-content>
+    <form [formGroup]="profileForm" (ngSubmit)="login()">
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+      </mat-form-field><br>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password">
+      </mat-form-field><br>
+      <button type="submit" mat-flat-button color="primary" [disabled]="!profileForm.valid">Sign In</button>
+    </form>
+    <button mat-raised-button color="primary" (click)="loginWithGoogle()">Google</button>
+  </mat-card-content>
+</mat-card>

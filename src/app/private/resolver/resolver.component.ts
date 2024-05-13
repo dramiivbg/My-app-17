@@ -1,5 +1,5 @@
 import { Component, DestroyRef, ElementRef, OnInit, Renderer2, ViewChild, computed, input, viewChild } from '@angular/core';
-import { Product } from '../shared/models/product';
+import { Product } from '../../shared/models/product';
 import { FormArray, FormArrayName, FormBuilder, FormControl, FormGroup, FormGroupDirective, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -17,8 +17,6 @@ import {MatCardModule} from '@angular/material/card';
 export class ResolverComponent implements OnInit{
   public data = [0,2,1,3,4,5,6,7];
   position:boolean = false;
-  p = viewChild.required<ElementRef>('p');
-  //product = input.required<Product>();
   profileForm = this.formBuilder.group({
     firstName: ['',Validators.required],
     lastName: ['',Validators.required],
@@ -64,6 +62,6 @@ export class ResolverComponent implements OnInit{
     this.aliases.removeAt(i);
   }
   async onSubmit(){
-    this.p().nativeElement.innerHTML = 'hola mundo';
+    console.log(this.profileForm);
   }
 }

@@ -1,9 +1,9 @@
 import { Component, NgModule, SecurityContext } from '@angular/core';
-import { Apod } from '../shared/models/apod';
-import { ApiService } from '../shared/service/Api.service';
+import { Apod } from '../../shared/models/apod';
+import { ApiService } from '../../shared/service/Api.service';
 import {provideNativeDateAdapter} from '@angular/material/core';
 import { FormBuilder, FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
-import { environment } from '../../environments/environment';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-list-apod',
